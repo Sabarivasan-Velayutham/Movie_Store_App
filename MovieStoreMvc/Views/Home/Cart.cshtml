@@ -1,0 +1,19 @@
+@model MovieStoreMvc.Models.DTO.CartListVm
+@{
+}
+
+
+<section class="movies">
+    @foreach(var movie in Model.CartList){
+        <div class="movie-card" onclick="window.location.href='/Home/MovieDetail?movieId=@movie.Id'">
+        <div class="movie-image">
+            <img src="/Uploads/@movie.MovieImage">
+        </div>
+        <div class="movie-info">
+            <h4>@movie.Title</h4>
+                <h4>@movie.GenreNames</h4>
+                <h4>@movie.ReleaseYear</h4>
+        </div>
+    </div>
+    }
+</section>

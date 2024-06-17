@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "C#: MovieStoreMvc",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}\\MovieStoreMvc.csproj",
+      "launchConfigurationId": "TargetFramework=;MovieStoreMvc"
+    }
+  ]
+}
