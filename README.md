@@ -17,10 +17,24 @@ Now upgraded to .net 8.0
 4. Open Tools > Package Manager > Package manager console
 5. Run these 2 commands
     ```
-     (i) add-migration init
-     (ii) update-database
+     add-migration init
+     update-database
      ````
-7. Now you can run this project
+    (or)
+   <p>Run the below commands in VS Code</p>
+   
+   ```
+      dotnet tool update --global dotnet-ef
+      dotnet ef --version
+      dotnet ef migrations add init
+      dotnet ef database update
+     ````
+7. Now you can run this project 
+      ```
+      dotnet restore
+      dotnet build
+      dotnet watch run
+     ```
 
 ## How to Register as a admin and login?
 1. There is a controller `UserAuthentication` and a commented method `Register`. Uncomment the `Register` method
